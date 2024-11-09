@@ -5,7 +5,25 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/search_view"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity4">
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="VISHAKAPATNAM"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button9"
+        app:layout_constraintTop_toTopOf="@+id/button9"
+        app:layout_constraintVertical_bias="1.0" />
 
     <SearchView
         android:id="@+id/searchView"
@@ -13,7 +31,7 @@
         android:layout_height="34dp"
         android:layout_centerHorizontal="true"
         android:layout_marginHorizontal="16dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="2dp"
         android:layout_marginTop="56dp"
         android:background="@drawable/search_view"
         android:iconifiedByDefault="false"
@@ -35,5 +53,149 @@
         app:layout_constraintStart_toEndOf="@+id/searchView"
         app:layout_constraintTop_toTopOf="@+id/searchView"
         app:srcCompat="@drawable/filter_icon" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+
+        android:backgroundTint="#1A8F8F8F"
+        android:drawableLeft="@drawable/detection"
+        android:text="Detect my location"
+        android:textColor="#8F8F8F"
+        app:layout_constraintStart_toStartOf="@+id/searchView"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="MUMBAI"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="KOLKATA"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintStart_toEndOf="@+id/button5"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="BENGULURU"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintStart_toEndOf="@+id/button6"
+        app:layout_constraintTop_toTopOf="@+id/button6" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="KOCHI"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="CHENNAI"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button8"
+        app:layout_constraintStart_toEndOf="@+id/button8"
+        app:layout_constraintTop_toTopOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="LUCKNOW"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/button8"
+        app:layout_constraintTop_toBottomOf="@+id/button8" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="PUNE"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button11"
+        app:layout_constraintStart_toEndOf="@+id/button11"
+        app:layout_constraintTop_toTopOf="@+id/button11"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="HYDERABAD"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/button12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button12"
+        app:layout_constraintTop_toTopOf="@+id/button12"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#338F8F8F"
+        android:fontFamily="@font/signika"
+        android:text="SURAT"
+        android:textColor="#1E1E1E"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/button11"
+        app:layout_constraintTop_toBottomOf="@+id/button11" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
