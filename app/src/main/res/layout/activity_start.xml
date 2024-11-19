@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".start">
 
     <ImageView
         android:id="@+id/imageView"
@@ -64,6 +64,7 @@
         android:id="@+id/button32"
         android:layout_width="218dp"
         android:layout_height="52dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#EC7A08"
         android:fontFamily="@font/signika_negative"
         android:text="Login"
@@ -71,6 +72,7 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView34"
         tools:layout_editor_absoluteY="593dp" />
 
     <Button

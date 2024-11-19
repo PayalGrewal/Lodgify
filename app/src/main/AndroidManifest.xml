@@ -12,32 +12,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Lodgify"
         tools:targetApi="31">
+
         <activity
-            android:name=".login_2"
+            android:name=".login"
             android:exported="false" />
+
         <activity
-            android:name=".review"
+            android:name=".start"
             android:exported="false" />
+
         <activity
-            android:name=".signup_page"
-            android:exported="false" />
-        <activity
-            android:name=".bottom_sheet"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity5"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity4"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".logo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

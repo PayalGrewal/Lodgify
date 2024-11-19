@@ -8,10 +8,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="PLACEHOLDER" />
-                  <option name="mobileSdkAppId" value="" />
-                  <option name="projectId" value="" />
-                  <option name="projectNumber" value="" />
+                  <option name="appId" value="com.example.lodgify" />
+                  <option name="mobileSdkAppId" value="1:463959655550:android:baecaea0f6d817c769842f" />
+                  <option name="projectId" value="lodgify-80f0c" />
+                  <option name="projectNumber" value="463959655550" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

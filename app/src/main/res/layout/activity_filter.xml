@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/search_view"
     android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity4">
+    tools:context=".filter">
 
     <Button
         android:id="@+id/button10"
