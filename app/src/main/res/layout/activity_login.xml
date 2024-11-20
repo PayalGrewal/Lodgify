@@ -78,7 +78,7 @@
         android:layout_marginTop="16dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
-        android:drawableLeft="@drawable/phone"
+        android:drawableLeft="@drawable/email"
         android:drawablePadding="30dp"
         android:ems="10"
         android:fontFamily="@font/signika_negative"
@@ -114,10 +114,12 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
         android:backgroundTint="#EC7A08"
+        android:fontFamily="@font/signika_negative"
         android:text="LogIn"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@id/editTextNumberPassword"
         app:layout_constraintStart_toStartOf="@id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword"/>
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword" />
 
     <TextView
         android:id="@+id/textView32"
@@ -131,6 +133,16 @@
         app:layout_constraintEnd_toEndOf="@id/buttonlog"
         app:layout_constraintStart_toStartOf="@id/buttonlog"
         app:layout_constraintTop_toBottomOf="@id/buttonlog" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView32"
+        app:layout_constraintStart_toStartOf="@+id/textView32"
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:srcCompat="@drawable/google" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
