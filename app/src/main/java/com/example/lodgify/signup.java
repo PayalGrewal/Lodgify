@@ -19,12 +19,15 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class signup extends AppCompatActivity {
 
     EditText na, em, ph, pa ;
     Button btn;
     private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +40,7 @@ public class signup extends AppCompatActivity {
             return insets;
         });
 
+        mDatabase = FirebaseDatabase.getInstance().getReference();
         mAuth = FirebaseAuth.getInstance();
         na = findViewById(R.id.editTextText);
         em = findViewById(R.id.editTextTextEmailAddress);
@@ -47,9 +51,11 @@ public class signup extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String email, password;
+                String email, password, name, phone;
                 email = String.valueOf(em.getText());
                 password = String.valueOf(pa.getText());
+                name = String.valueOf(na.getText());
+                phone = String.valueOf(ph.getText());
 
                 mAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -59,6 +65,8 @@ public class signup extends AppCompatActivity {
                                     FirebaseUser user = mAuth.getCurrentUser();
                                     Toast.makeText(signup.this, "Signup successful.",
                                             Toast.LENGTH_SHORT).show();
+                                    User userdata = new User(name, phone);
+                                    mDatabase.child("users").setValue(userdata);
                                     Intent intent = new Intent(getApplicationContext(), home.class);
                                     startActivity(intent);
                                     finish();
@@ -68,6 +76,8 @@ public class signup extends AppCompatActivity {
                                 }
                             }
                         });
+
+
             }
         });
     }
