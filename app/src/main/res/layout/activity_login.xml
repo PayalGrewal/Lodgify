@@ -19,14 +19,13 @@
 
     <TextView
         android:id="@+id/textView28"
-        android:layout_width="252dp"
-        android:layout_height="33dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/signika_negative_semibold"
         android:text="Welcome to Lodgify!"
         android:textColor="#000000"
         android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintHorizontal_bias="0.352"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -39,7 +38,6 @@
         android:textColor="#80000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView28"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView28"
         app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
@@ -49,11 +47,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:fontFamily="@font/signika_negative"
-        android:text="create a password"
+        android:text="password"
         android:textColor="#80000000"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintHorizontal_bias="0.401"
         app:layout_constraintStart_toStartOf="@+id/textView29"
         app:layout_constraintTop_toBottomOf="@+id/textView29" />
 
@@ -67,7 +64,6 @@
         android:textColor="#000000"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="@+id/textView30"
-        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="@+id/textView30"
         app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
@@ -86,9 +82,9 @@
         android:inputType="textEmailAddress"
         android:singleLine="true"
         android:textColorHint="#636161"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+        app:layout_constraintEnd_toEndOf="@id/textView31"
+        app:layout_constraintStart_toStartOf="@id/textView31"
+        app:layout_constraintTop_toBottomOf="@id/textView31" />
 
     <EditText
         android:id="@+id/editTextNumberPassword"
@@ -104,9 +100,9 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#636161"
-        app:layout_constraintEnd_toEndOf="@+id/editTextPhone"
-        app:layout_constraintStart_toStartOf="@+id/editTextPhone"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPhone" />
+        app:layout_constraintEnd_toEndOf="@id/editTextPhone"
+        app:layout_constraintStart_toStartOf="@id/editTextPhone"
+        app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
 
     <Button
         android:id="@+id/buttonlog"
@@ -126,7 +122,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="18dp"
-        android:fontFamily="@font/signika_negative"
         android:text="----------------------------or---------------------------"
         android:textColor="#000000"
         android:textSize="16sp"

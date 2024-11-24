@@ -15,19 +15,15 @@
         <activity
             android:name=".filter"
             android:exported="false" />
-
         <activity
             android:name=".home"
             android:exported="false" />
-
         <activity
             android:name=".signup"
             android:exported="false" />
-
         <activity
             android:name=".login"
             android:exported="false" />
-
         <activity
             android:name=".start"
             android:exported="true">

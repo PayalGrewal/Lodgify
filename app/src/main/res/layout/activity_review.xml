@@ -114,8 +114,9 @@
         app:layout_constraintBottom_toBottomOf="@+id/textView36"
         app:layout_constraintEnd_toStartOf="@+id/textView36"
         app:layout_constraintTop_toBottomOf="@+id/textView35"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/line" />
+        app:layout_constraintVertical_bias="1.0"/>
+<!--        app:srcCompat="@drawable/line" -->
+
 
     <TextView
         android:id="@+id/textView37"
@@ -228,8 +229,8 @@
         android:layout_marginStart="24dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView42"
         app:layout_constraintStart_toEndOf="@+id/textView42"
-        app:layout_constraintTop_toTopOf="@+id/textView42"
-        app:srcCompat="@drawable/line" />
+        app:layout_constraintTop_toTopOf="@+id/textView42"/>
+<!--        app:srcCompat="@drawable/line" />-->
 
     <TextView
         android:id="@+id/textView43"
@@ -372,8 +373,8 @@
                     app:layout_constraintStart_toEndOf="@+id/textView46"
 
                     app:layout_constraintTop_toTopOf="@+id/textView46"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/line" />
+                    app:layout_constraintVertical_bias="1.0"/>
+<!--                    app:srcCompat="@drawable/line" />-->
 
                 <TextView
                     android:id="@+id/textView47"
@@ -459,8 +460,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/textView48"
                     app:layout_constraintStart_toEndOf="@+id/textView48"
                     app:layout_constraintTop_toTopOf="@+id/textView48"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/line" />
+                    app:layout_constraintVertical_bias="1.0"/>
+<!--                    app:srcCompat="@drawable/line" />-->
 
                 <TextView
                     android:id="@+id/textView49"
@@ -547,8 +548,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/textView50"
                     app:layout_constraintStart_toEndOf="@+id/textView50"
                     app:layout_constraintTop_toTopOf="@+id/textView50"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/line" />
+                    app:layout_constraintVertical_bias="1.0"/>
+<!--                    app:srcCompat="@drawable/line" />-->
 
                 <TextView
                     android:id="@+id/textView51"
@@ -634,8 +635,8 @@
                     app:layout_constraintBottom_toBottomOf="@+id/textView52"
                     app:layout_constraintStart_toEndOf="@+id/textView52"
                     app:layout_constraintTop_toTopOf="@+id/textView52"
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/line" />
+                    app:layout_constraintVertical_bias="1.0"/>
+<!--                    app:srcCompat="@drawable/line" />-->
 
                 <TextView
                     android:id="@+id/textView53"
