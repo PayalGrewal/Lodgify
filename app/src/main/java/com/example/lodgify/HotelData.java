@@ -19,15 +19,15 @@ public class HotelData {
         return rate;
     }
 
-    public String getNa() {
+    public String getName() {
         return name;
     }
 
-    public String getLoc() {
+    public String getLocation() {
         return location;
     }
 
-    public String getPrc() {
+    public String getPrice() {
         return price;
     }
 }

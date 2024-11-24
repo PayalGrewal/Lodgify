@@ -12,7 +12,7 @@ import java.util.List;
 
 
 public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> {
-    private List<HotelData> itemList;
+    private final List<HotelData> itemList;
 
     public ListAdapter(List<HotelData> itemList) {
         this.itemList = itemList;
@@ -32,7 +32,7 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.listsample, parent, false);
         return new MyViewHolder(itemView);
@@ -41,10 +41,10 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
         HotelData item = itemList.get(position);
-        holder.na.setText(item.getNa());
-        holder.loc.setText(item.getLoc());
+        holder.na.setText(item.getName());
+        holder.loc.setText(item.getLocation());
         holder.ra.setText(item.getRate());
-        holder.prc.setText(item.getPrc());
+        holder.prc.setText(item.getPrice());
     }
 
     @Override
