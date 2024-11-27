@@ -19,6 +19,9 @@
             android:name=".activity_booking"
             android:exported="false" />
         <activity
+            android:name=".review"
+            android:exported="false" />
+        <activity
             android:name=".filter"
             android:exported="false" />
         <activity

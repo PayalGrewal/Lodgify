@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "463959655550",
+    "firebase_url": "https://lodgify-80f0c-default-rtdb.firebaseio.com",
     "project_id": "lodgify-80f0c",
     "storage_bucket": "lodgify-80f0c.firebasestorage.app"
   },
@@ -12,7 +13,20 @@
           "package_name": "com.example.lodgify"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "463959655550-5jjomeoj5fuppg7g49bhegtkq5ml5i78.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lodgify",
+            "certificate_hash": "acac8f46f76f73f61e4984df240c24872d4ef2de"
+          }
+        },
+        {
+          "client_id": "463959655550-cgr9k501d038sa7fd9u1veule1u1i1s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDNXEuJtTEJx8OLIIrRiBGLLIW72BIhqc8"
@@ -20,7 +34,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "463959655550-cgr9k501d038sa7fd9u1veule1u1i1s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
