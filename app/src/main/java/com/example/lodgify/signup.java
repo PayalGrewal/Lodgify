@@ -63,10 +63,12 @@ public class signup extends AppCompatActivity {
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if (task.isSuccessful()) {
                                     FirebaseUser user = mAuth.getCurrentUser();
+                                    String uID = user.getUid();
                                     Toast.makeText(signup.this, "Signup successful.",
                                             Toast.LENGTH_SHORT).show();
+
                                     User userdata = new User(name, phone);
-                                    mDatabase.child("users").setValue(userdata);
+                                    mDatabase.child("users").child(uID).setValue(userdata);
                                     Intent intent = new Intent(getApplicationContext(), home.class);
                                     startActivity(intent);
                                     finish();
