@@ -1,6 +1,7 @@
 package com.example.lodgify;
 
 import android.os.Bundle;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -27,6 +28,7 @@ public class home extends AppCompatActivity {
     private ListAdapter myAdapter;
     private List<HotelData> itemList;
     private DatabaseReference mDatabase;
+    TextView un;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,16 @@ public class home extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Bundle extras = getIntent().getExtras();
+        un = findViewById(R.id.textView3);
+
+        if(extras != null){
+
+            String usern = "Hi, "+extras.getString("username");
+            un.setText(usern);
+
+        }
 
         recyclerView = findViewById(R.id.hotels);
 
