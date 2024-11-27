@@ -70,8 +70,8 @@
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="348dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
         android:drawableLeft="@drawable/email"
@@ -89,8 +89,8 @@
     <EditText
         android:id="@+id/editTextNumberPassword"
         android:layout_width="348dp"
-        android:layout_height="77dp"
-        android:layout_marginTop="18dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="15dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
         android:drawableLeft="@drawable/otp"
@@ -104,6 +104,15 @@
         app:layout_constraintStart_toStartOf="@id/editTextPhone"
         app:layout_constraintTop_toBottomOf="@id/editTextPhone" />
 
+    <TextView
+        android:id="@+id/textforgot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="forgot your password ?"
+        android:textColor="#EC7A08"
+        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword"
+        app:layout_constraintEnd_toEndOf="@id/editTextNumberPassword"/>
     <Button
         android:id="@+id/buttonlog"
         android:layout_width="wrap_content"
@@ -113,9 +122,9 @@
         android:fontFamily="@font/signika_negative"
         android:text="LogIn"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="@id/editTextNumberPassword"
+        app:layout_constraintEnd_toEndOf="@id/textforgot"
         app:layout_constraintStart_toStartOf="@id/editTextNumberPassword"
-        app:layout_constraintTop_toBottomOf="@id/editTextNumberPassword" />
+        app:layout_constraintTop_toBottomOf="@id/textforgot" />
 
     <TextView
         android:id="@+id/textView32"

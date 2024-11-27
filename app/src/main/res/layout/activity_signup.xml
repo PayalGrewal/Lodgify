@@ -70,7 +70,7 @@
     <EditText
         android:id="@+id/editTextText"
         android:layout_width="348dp"
-        android:layout_height="65dp"
+        android:layout_height="60dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
@@ -90,8 +90,8 @@
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="348dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
         android:drawableLeft="@drawable/email"
@@ -111,8 +111,8 @@
     <EditText
         android:id="@+id/editTextPhone"
         android:layout_width="348dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
         android:drawableLeft="@drawable/phone"
@@ -130,8 +130,8 @@
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="348dp"
-        android:layout_height="65dp"
-        android:layout_marginTop="5dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
         android:background="@drawable/placeholders"
         android:backgroundTint="#1A636161"
         android:drawableLeft="@drawable/otp"
