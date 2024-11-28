@@ -1,5 +1,6 @@
 package com.example.lodgify;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -45,6 +46,14 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
         holder.loc.setText(item.getLocation());
         holder.ra.setText(item.getRate());
         holder.prc.setText(item.getPrice());
+
+        holder.itemView.setOnClickListener(v -> {
+            Intent intent = new Intent(v.getContext(),review.class);
+            intent.putExtra("name",item.getName());
+            intent.putExtra("location",item.getLocation());
+            intent.putExtra("ID",item.getId());
+            v.getContext().startActivity(intent);
+        } );
     }
 
     @Override
