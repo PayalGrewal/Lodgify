@@ -52,6 +52,8 @@ public class ListAdapter extends RecyclerView.Adapter<ListAdapter.MyViewHolder> 
             intent.putExtra("name",item.getName());
             intent.putExtra("location",item.getLocation());
             intent.putExtra("ID",item.getId());
+            intent.putExtra("rate",item.getRate());
+            intent.putExtra("description",item.getDesc());
             v.getContext().startActivity(intent);
         } );
     }
